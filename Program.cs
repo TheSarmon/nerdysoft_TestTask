@@ -29,8 +29,6 @@ namespace Sprint_16
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            
-
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;

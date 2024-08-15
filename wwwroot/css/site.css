@@ -69,17 +69,15 @@ input[type="text"], input[type="datetime-local"], textarea.form-control {
     border: 1px solid #555555;
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 7px;
 }
 
     input[type="text"]:focus, input[type="datetime-local"]:focus, textarea.form-control:focus {
         border-color: steelblue;
         color: #ffffff;
         background-color: #333333;
+        resize: vertical;
     }
-
-textarea {
-    resize: vertical;
-}
 
 .footer {
     background-color: #333333;
