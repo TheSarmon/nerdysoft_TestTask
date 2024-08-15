@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("nerdysoft_TestTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6c3215983b54282864a26200a778e6a0fc0447f")]
 [assembly: System.Reflection.AssemblyProductAttribute("nerdysoft_TestTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("nerdysoft_TestTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

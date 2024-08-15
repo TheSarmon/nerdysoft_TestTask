@@ -1,0 +1,57 @@
+﻿@model AnnouncementModel
+
+<h2>Announcement Details</h2>
+
+<div>
+    <h4>Announcement</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Title
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2">
+            Description
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class="col-sm-2">
+            Date
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateAdded)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-info">Back to List</a>
+</div>
+
+@if (ViewBag.SimilarAnnouncements != null)
+{
+    <h3>Similar Announcements</h3>
+    <table class="table">
+        <tbody>
+            @foreach (var similar in ViewBag.SimilarAnnouncements)
+            {
+                <tr>
+                    <td>@similar.Title</td>
+                    <td>@similar.Description</td>
+                    <td>@similar.DateAdded.ToShortDateString()</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@similar.Id" class="btn btn-primary">View Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No similar announcements found.</p>
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\si heshtek\\nerdysoft_TestTask\\nerdysoft_TestTask.csproj": {}
+    "C:\\nerdysoft_TestTask\\nerdysoft_TestTask.csproj": {}
   },
   "projects": {
-    "C:\\projects\\si heshtek\\nerdysoft_TestTask\\nerdysoft_TestTask.csproj": {
+    "C:\\nerdysoft_TestTask\\nerdysoft_TestTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\si heshtek\\nerdysoft_TestTask\\nerdysoft_TestTask.csproj",
+        "projectUniqueName": "C:\\nerdysoft_TestTask\\nerdysoft_TestTask.csproj",
         "projectName": "nerdysoft_TestTask",
-        "projectPath": "C:\\projects\\si heshtek\\nerdysoft_TestTask\\nerdysoft_TestTask.csproj",
+        "projectPath": "C:\\nerdysoft_TestTask\\nerdysoft_TestTask.csproj",
         "packagesPath": "C:\\Users\\ryzen\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\si heshtek\\nerdysoft_TestTask\\obj\\",
+        "outputPath": "C:\\nerdysoft_TestTask\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -50,6 +50,10 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
